@@ -6,4 +6,4 @@ if __name__ == '__main__':
     # ... and 0.5 for hidden layers. 
     # For training, parameters of 1000 epochs, a mini batch size of 10, a learning rate of 0.1, and a l2 value 1.0 were used here.
     NN = NeuralNetwork([784, 100, 10], cost='cross_entropy', activation_fn='sigmoid', dropout=(0.9, 0.5))
-    NN.train('mnist_train_norm.txt', 'mnist_test_norm.txt', 1000, 10, 0.1, lmbda=1.0)
+    NN.train('mnist_train.csv', 'mnist_test.csv', 1000, 10, 0.1, lmbda=1.0)
