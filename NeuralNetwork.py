@@ -223,13 +223,15 @@ class NeuralNetwork:
         test_file = open(file2, 'r').readlines()
         train_data = list()
         test_data = list()
-        for line in train_file:
-            # convert all training data to floating values using map()
-            train_input = list([int(line[0])]) + list(map(float, line.split(',')[1: -1]))
+        for line in train_file[1:]:  # skip header line
+            # convert all training data to normalized floating values using map()
+            train_input = list([int(line[0])]) + list(map(lambda x: float(x) / 255, line.split(',')[1:]))
             # add to training data array
             train_data.append(train_input)
-        for line in test_file:
-            test_input = list([int(line[0])]) + list(map(float, line.split(',')[1: -1]))
+        for line in test_file[1:]:  # skip header line
+            # convert all test data to normalized floating values using map()
+            test_input = list([int(line[0])]) + list(map(lambda x: float(x) / 255, line.split(',')[1:]))
+            # add to test data array
             test_data.append(test_input)
         return train_data, test_data
 
