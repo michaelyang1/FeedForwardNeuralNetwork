@@ -7,7 +7,7 @@ Before you continue, ensure you have met the following requirements:
 
 * You have installed Python 3
 * You have installed NumPy 
-* You have downloaded the MNIST database 
+* You have downloaded the MNIST database (only for demo in test.py to run; you can skip this step and use your own dataset if you'd like) 
 * You have a basic understanding of feed forward neural networks 
 
 Installation 
