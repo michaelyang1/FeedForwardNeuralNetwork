@@ -1,4 +1,4 @@
-# FeedForwardNeuralNetwork
+# Feed Forward Neural Network
 This is a multi-layer perceptron/feed-forward neural network library complete with various optimizers and regularizers. 
 
 Prerequisites
@@ -27,4 +27,4 @@ Usage
 
 Contact Information 
 
-* Email : myang1394@gmail.com
+* Email : myang243@stanford.edu
